@@ -1,16 +1,16 @@
-package com.yay.microservice.zipkin;
+package com.yay.microservice.route.geteway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import zipkin.server.EnableZipkinServer;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @SpringBootApplication
-@EnableZipkinServer
 @EnableEurekaClient
-public class MicroserviceZipkinApplication {
+@EnableZuulProxy
+public class MicroserviceRouteGetewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroserviceZipkinApplication.class, args);
+		SpringApplication.run(MicroserviceRouteGetewayApplication.class, args);
 	}
 }
